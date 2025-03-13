@@ -134,6 +134,47 @@
 	margin-top: 30px !important;
 }
 
+.image-container2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-box2 {
+    display: inline-block;
+    width: 100%;
+    max-width: 800px; /* Adjust the max-width as needed */
+}
+
+/* Estilizar imágenes */
+.image-box2 img {
+    object-fit: cover; /* Mantiene la proporción recortando el exceso */
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.image-box2 img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilizar el texto debajo de la imagen */
+.image-box2 p {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.big-rectangular-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px; /* Adjust the max-width as needed */
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
 
 
 
