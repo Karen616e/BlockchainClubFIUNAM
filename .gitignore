@@ -1,0 +1,9 @@
+# Operating systems files
+# macOS
+.DS_Store
+
+# windows
+Thumbs.db
+
+# VS Code settings
+.vscode/*
