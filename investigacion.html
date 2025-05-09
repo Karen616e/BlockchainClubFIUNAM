@@ -76,13 +76,13 @@
                         </div>
 
                         <ul>
-                            <li class="current">
+                            <li>
                                 <a href="index.html">
                                     <div>Sobre Nosotros</div>
                                 </a>
                             </li>
 
-                            <li>
+                            <li class="current">
                                 <a href="investigacion.html">
                                     <div>Investigación</div>
                                 </a>
@@ -109,6 +109,12 @@
                             <li>
                                 <a href="#">
                                     <div>Contacto</div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div>Ubicación</div>
                                 </a>
                             </li>
 
@@ -155,82 +161,80 @@
 
                         <!-- Post
                         ============================================= -->
-                        <div class="entry clearfix">
-
-                            <div class="container-row">
-
-                                <div class="container-text">
-                                    <h2>Bienvenidos a la página del Club de Blockchain de la Facultad de Ingeniería</h2>
-                            
-                                    <p class="textos-pag">
-                                        Nuestro objetivo es fomentar el conocimiento y la adopción de la tecnología Blockchain dentro y fuera de la UNAM, para ello, en la Facultad de Ingeniería, hemos creado el <strong>Club de Blockchain</strong>, un espacio donde podrás adentrarte en este ecosistema, participar en eventos, tomar cursos especializados y explorar el funcionamiento de nuestro nodo universitario.
-                                    </p>
-
-                                    <p class="textos-pag">
-                                        Buscamos demostrar que Blockchain va mucho más allá de las criptomonedas, sino que abarca aplicaciones en contratos inteligentes, finanzas descentralizadas (DeFi), desarrollo de aplicaciones descentralizadas (DApps) y muchas otras áreas innovadoras. Además, tendrás la oportunidad de integrarte a hackatones y retos tecnológicos que pondrán a prueba tus habilidades.
-                                    </p>
-                            
-                                </div>
-
-                                <div class="container-image">
-                                    <img src="images/icons/bcvector.png" alt="Imagen red neuronal">
-                                </div>
-                                
-                            </div>   
-                            
-                        </div>
-
-                        <!--Modales-->
-
-                        <div class="image-container2">
-
-                            <div class="image-box2">
-
-                                <img class="big-rectangular-image" src="images/nodos.jpeg" alt="BlockChain nodes" onclick="openModal('modalMarkMap', 'NODOS.html')">
-
-                                <p>Click para conocer más acerca de nodos</p>
-
-                            </div>
-
-                        </div>
                         
-                        <!-- Modal del markpmap -->
-                        <div id="modalMarkMap" class="modal">
 
-                            <div class="modal-content">
+                </div>
 
-                                <span class="close" onclick="closeModal('modalMarkMap')">&times;</span>
-
-                                <iframe id="Markmap"></iframe>
-
-                            </div>
-
-                        </div>
-
+                <div class="image-container">
+                    <div class="image-box">
+                        <img src="images/infografias/ArbolMerkle/Artboard 1.png" alt="Árbol de Merkle">
+                        <p>Árbol de Merkle</p>
                     </div>
-                            <!-- Slider
-                            ============================================= -->
+                    <div class="image-box">
+                        <img src="images/infografias/Blockchain 1/Artboard 1-100.jpg" alt="blockchain">
+                        <p>Blockchain</p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/infografias/Dapps/Artboard 1.png" alt="DApps">
+                        <p>DApps</p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/infografias/ESTRUCTURA/Artboard 1.png" alt="Estructura">
+                        <p>Estructura de Blockchain</p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/infografias/FIRMADIGITAL/Artboard 1.png" alt="Firma Digital">
+                        <p>Firma Digital</p>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="image-container">
+                        <div class="image-box">
+                            <img src="images/infografias/HASH/Artboard 1.png" alt="Hash">
+                            <p>Hash</p>
+                        </div>
+                        <div class="image-box">
+                            <img src="images/infografias/PPoS/Artboard 1-100.jpg" alt="PPoS">
+                            <p>PPoS</p>
+                        </div>
+                        <div class="image-box">
+                            <img src="images/infografias/Protocolos de consenso/Artboard 1-100.jpg" alt="Protocolos de Consenso">
+                            <p>Protocolos de consenso</p>
+                        </div>
+                        <div class="image-box">
+                            <img src="images/infografias/Smart Contract/Artboard 1.png" alt="Smart Contracts">
+                            <p>Smart Contracts</p>
+                        </div>
+                        <div class="image-box">
+                            <img src="images/infografias/Wallet/Artboard 1.png" alt="Wallet">
+                            <p>Wallet</p>
+                        </div>
+                </div>
                 
-							<!--Slider end-->
-				
-                            <!-- Contenido
-                            ============================================= -->
-                            <div class="entry-content notopmargin">
-                        
-                                <div class="fancy-title title-dotted-border title-center">
-                                    <h1>¿Qué es blockchain?</h1>
+                                <!-- Modal de la pagina -->
+                                <div id="modalPaginaCore" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close" onclick="closeModal('modalPaginaCore')">&times;</span>
+                                        <iframe id="paginaCore"></iframe>
+                                    </div>
                                 </div>
-                                        
-                                    <p class="textos-pag">
-                                    Un sistema basado en blockchain distribuye la información entre méultiples nodos de la red de manera consensuada, lo que permite garantizar un almacenaminto inmutable, ordenado y trasparente.
-                                    </p>
-                                    
+
+
+                            
+
+
+                                
                                 <!-- Post Content End -->
+
+                            
 
                                 <div class="clear"></div>
 
-                            </div>
+                            
 
+                            </div>
                         </div><!-- .entry end -->
 
                     
@@ -238,9 +242,7 @@
 
                 </div>
 
-            </div>
-
-            <!--<div class="restricted"></div>-->
+                </div>
 
         </section><!-- #contenido end -->
 
