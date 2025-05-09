@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="css/colors.css" type="text/css" />
     <link rel="stylesheet" href="css/stylesIndex.css">
+    <link rel="stylesheet" href="css/style_images.css">
 
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -76,13 +77,13 @@
                         </div>
 
                         <ul>
-                            <li class="current">
+                            <li>
                                 <a href="index.html">
                                     <div>Sobre Nosotros</div>
                                 </a>
                             </li>
 
-                            <li>
+                            <li class="current">
                                 <a href="investigacion.html">
                                     <div>Investigación</div>
                                 </a>
@@ -109,6 +110,12 @@
                             <li>
                                 <a href="#">
                                     <div>Contacto</div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div>Ubicación</div>
                                 </a>
                             </li>
 
@@ -155,82 +162,89 @@
 
                         <!-- Post
                         ============================================= -->
-                        <div class="entry clearfix">
-
-                            <div class="container-row">
-
-                                <div class="container-text">
-                                    <h2>Bienvenidos a la página del Club de Blockchain de la Facultad de Ingeniería</h2>
-                            
-                                    <p class="textos-pag">
-                                        Nuestro objetivo es fomentar el conocimiento y la adopción de la tecnología Blockchain dentro y fuera de la UNAM, para ello, en la Facultad de Ingeniería, hemos creado el <strong>Club de Blockchain</strong>, un espacio donde podrás adentrarte en este ecosistema, participar en eventos, tomar cursos especializados y explorar el funcionamiento de nuestro nodo universitario.
-                                    </p>
-
-                                    <p class="textos-pag">
-                                        Buscamos demostrar que Blockchain va mucho más allá de las criptomonedas, sino que abarca aplicaciones en contratos inteligentes, finanzas descentralizadas (DeFi), desarrollo de aplicaciones descentralizadas (DApps) y muchas otras áreas innovadoras. Además, tendrás la oportunidad de integrarte a hackatones y retos tecnológicos que pondrán a prueba tus habilidades.
-                                    </p>
-                            
-                                </div>
-
-                                <div class="container-image">
-                                    <img src="images/icons/bcvector.png" alt="Imagen red neuronal">
-                                </div>
-                                
-                            </div>   
-                            
-                        </div>
-
-                        <!--Modales-->
-
-                        <div class="image-container2">
-
-                            <div class="image-box2">
-
-                                <img class="big-rectangular-image" src="images/nodos.jpeg" alt="BlockChain nodes" onclick="openModal('modalMarkMap', 'NODOS.html')">
-
-                                <p>Click para conocer más acerca de nodos</p>
-
-                            </div>
-
-                        </div>
                         
-                        <!-- Modal del markpmap -->
-                        <div id="modalMarkMap" class="modal">
 
-                            <div class="modal-content">
+                </div>
 
-                                <span class="close" onclick="closeModal('modalMarkMap')">&times;</span>
-
-                                <iframe id="Markmap"></iframe>
-
-                            </div>
-
-                        </div>
-
+                <div class="image-container">
+                    <div class="image-box">
+                        <img src="images/infografias/ArbolMerkle/Artboard 1.png" alt="Árbol de Merkle" class="image-thumbnail" data-gallery="ArbolMerkle">
+                        <p>Árbol de Merkle</p>
                     </div>
-                            <!-- Slider
-                            ============================================= -->
-                
-							<!--Slider end-->
-				
-                            <!-- Contenido
-                            ============================================= -->
-                            <div class="entry-content notopmargin">
-                        
-                                <div class="fancy-title title-dotted-border title-center">
-                                    <h1>¿Qué es blockchain?</h1>
+                    <div class="image-box">
+                        <img src="images/infografias/Blockchain 1/Artboard 1-100.jpg" alt="blockchain" class="image-thumbnail" data-gallery="Blockchain">
+                        <p>Blockchain</p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/infografias/Dapps/Artboard 1.png" alt="DApps" class="image-thumbnail" data-gallery="Dapps">
+                        <p>DApps</p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/infografias/ESTRUCTURA/Artboard 1.png" alt="Estructura" class="image-thumbnail" data-gallery="Estructura">
+                        <p>Estructura de Blockchain</p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/infografias/FIRMADIGITAL/Artboard 1.png" alt="Firma Digital" class="image-thumbnail" data-gallery="FirmaDigital">
+                        <p>Firma Digital</p>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="image-container">
+                        <div class="image-box">
+                            <img src="images/infografias/HASH/Artboard 1.png" alt="Hash" class="image-thumbnail" data-gallery="Hash" >
+                            <p>Hash</p>
+                        </div>
+                        <div class="image-box">
+                            <img src="images/infografias/PPoS/Artboard 1-100.jpg" alt="PPoS" class="image-thumbnail" data-gallery="Ppos">
+                            <p>PPoS</p>
+                        </div>
+                        <div class="image-box">
+                            <img src="images/infografias/Protocolos de consenso/Artboard 1-100.jpg" alt="Protocolos de Consenso" class="image-thumbnail" data-gallery="ProtocolosConsenso">
+                            <p>Protocolos de consenso</p>
+                        </div>
+                        <div class="image-box">
+                            <img src="images/infografias/Smart Contract/Artboard 1.png" alt="Smart Contracts" class="image-thumbnail" data-gallery="SmartContract">
+                            <p>Smart Contracts</p>
+                        </div>
+                        <div class="image-box">
+                            <img src="images/infografias/Wallet/Artboard 1.png" alt="Wallet" class="image-thumbnail" data-gallery="Wallet">
+                            <p>Wallet</p>
+                        </div>
+                </div>
+                <!-- Contenedor para el slider -->
+                <div id="sliderModal" class="slider-modal">
+                    <span class="close-btn">&times;</span>
+                    <div class="slider-content">
+                        <img id="sliderImage" src="" alt="Imagen del slider">
+                        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                        <button class="next" onclick="changeImage(1)">&#10095;</button>
+                    </div>
+                </div>
+
+                                <!-- Modal de la pagina -->
+                                <div id="modalPaginaCore" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close" onclick="closeModal('modalPaginaCore')">&times;</span>
+                                        <iframe id="paginaCore"></iframe>
+                                    </div>
                                 </div>
-                                        
-                                    <p class="textos-pag">
-                                    Un sistema basado en blockchain distribuye la información entre méultiples nodos de la red de manera consensuada, lo que permite garantizar un almacenaminto inmutable, ordenado y trasparente.
-                                    </p>
-                                    
+
+
+                            
+
+
+                                
                                 <!-- Post Content End -->
+
+                            
 
                                 <div class="clear"></div>
 
-                            </div>
+                            
 
+                            </div>
                         </div><!-- .entry end -->
 
                     
@@ -238,9 +252,7 @@
 
                 </div>
 
-            </div>
-
-            <!--<div class="restricted"></div>-->
+                </div>
 
         </section><!-- #contenido end -->
 
@@ -348,6 +360,6 @@
     <!-- Footer Scripts
     ============================================= -->
     <script type="text/javascript" src="js/functions.js"></script>
-
+    <script src="js/slider.js"></script>
 </body>
 </html>

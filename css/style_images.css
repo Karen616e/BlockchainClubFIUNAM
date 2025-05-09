@@ -1,0 +1,74 @@
+/* Estilo para el contenedor de las imágenes */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-box {
+    position: relative;
+}
+
+.image-thumbnail {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.image-thumbnail:hover {
+    opacity: 0.8;
+}
+
+/* Estilo para el modal (slider) */
+.slider-modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#sliderImage {
+    width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Botón de cierre */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+}
