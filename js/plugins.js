@@ -345,8 +345,6 @@ window.onclick = function(event) {
 }
 
 
-
-
 /**
  *
  * Twitter Feed Fetcher

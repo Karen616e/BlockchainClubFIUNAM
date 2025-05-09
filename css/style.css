@@ -165,7 +165,7 @@ small { font-family: 'Lato', sans-serif; }
 	float: none;
 	width: 1220px;
 	margin: 0 auto;
-	background-color: #FFF;
+	background-color: #000;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.1);
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -1851,7 +1851,13 @@ body.side-push-panel #side-panel {
 	z-index: 399;
 	width: 300px;
 	height: 100%;
-	background-color: #F5F5F5;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	background: linear-gradient(135deg, #15045c, #7b2c82, #e881e7);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 	overflow: hidden;
 }
 
