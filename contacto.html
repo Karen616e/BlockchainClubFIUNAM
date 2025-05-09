@@ -21,12 +21,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <style>
-        .map-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 1px; /*espacio arriba del mapa */
-        }
+        html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
+    #wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+
+    #content {
+    flex: 1; /* Esto hace que el contenido crezca para empujar el footer hacia abajo */
+    }
+
         </style>
 
         <!--[if lte IE 8]><script src="js/ie6/warning.js"></script><script>window.onload=function(){e("js/ie6/")}</script><![endif]-->
@@ -40,7 +50,7 @@
 
     <!-- Titulo
     ============================================= -->
-    <title>Blockchain Club: Ubicación</title>
+    <title>Blockchain Club: Contacto</title>
 
 </head>
 <body class="stretched">
@@ -113,13 +123,13 @@
                                 </a>
                             </li>
 
-                            <li>
+                            <li class="current">
                                 <a href="contacto.html">
                                     <div>Contacto</div>
                                 </a>
                             </li>
 
-                            <li class="current">
+                            <li>
                                 <a href="mapas.html">
                                     <div>Ubicación</div>
                                 </a>
@@ -138,7 +148,7 @@
         <section id="page-title">
 
             <div class="container clearfix">
-                <h1>Blockchain Club: Ubicación</h1>
+                <h1>Blockchain Club: Contacto</h1>
                 <ol class="breadcrumb">
                     <!--<li><a href="#">Programas Académicos</a></li>
                     <li><a href="#">Licenciaturas</a></li>
@@ -153,20 +163,25 @@
 
 
 <section id="content">
-
-    <div class="content-wrap">
-
-        <div class="container clearfix">
-        
-
-            <p class="nobottommargin">El club se encuentra en el primer piso del edificio T (Bernardo Quintana Arrioja) 
-                en el salón T-102 de las Secretarías de Posgrado e Investigación y de Apoyo a la Docencia, FI, UNAM.</p>
-
-            
-
-            <div class="line"></div>
-
+    <div class="container clearfix">
+        <br>
+        <p class="info-contacto">
+            Si necesitas más información o tienes alguna duda, no dudes en contactarnos.
+        </p>
+    <div class="contacto-rapido">
+        <div class="contacto-item">
+            <a href="mailto:unam.blockchain.club@fi.unam.edu" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                <i class="icon-envelope"></i>
+                <span>unam.blockchain.club@fi.unam.edu</span>
+            </a>
         </div>
+        <div class="contacto-item">
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://x.com/blockchain_unam&ved=2ahUKEwj6kLeSs5eNAxXJMEQIHZ3cMoMQFnoECBsQAQ&usg=AOvVaw2OrSkigiyX-32FQC1tbhwr" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                <i class="icon-twitter"></i>
+                <span>@blockchain_unam</span>
+            </a>
+        </div>
+    </div>
 
 
 
@@ -178,15 +193,7 @@
 </section><!-- #contenido end-->
 
             
-            <div class="map-container">
-                <iframe id="mapIframe" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d941.2391406570141!2d-99.18204624544043!3d19.32769109242576!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDE5JzQwLjYiTiA5OcKwMTAnNTMuOCJX!5e0!3m2!1ses-419!2smx!4v1746668970917!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
 
-            
-
-
-        <!--Fin prueba de mapa    
-         -->
 
 		<!-- Footer
         ============================================= -->
