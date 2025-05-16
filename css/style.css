@@ -165,7 +165,7 @@ small { font-family: 'Lato', sans-serif; }
 	float: none;
 	width: 1220px;
 	margin: 0 auto;
-	background-color: #000;
+	background-color: transparent;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.1);
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -721,7 +721,7 @@ body.stretched .container-fullwidth {
 
 #header {
 	position: relative;
-	background-color: #d8d8d8;
+	background-color: transparent;
 	border-bottom: 1px solid #F5F5F5;
 }
 
@@ -813,7 +813,7 @@ border-right-color: rgba(0,0,0,0.1);
 #logo a {
 	display: block;
 	color: #000;
-	background:#d8d8d8;
+	background: transparent;
 }
 
 #logo img {
@@ -944,7 +944,7 @@ border-right-color: rgba(0,0,0,0.1);
 	height: 100px;
 	line-height: 100px;
 	padding: 0 15px;
-	color: #444;
+	color: white;
 	/*font-weight: bold;*/
 	font-size: 14px;
 	letter-spacing: 1px;
@@ -1054,9 +1054,9 @@ border-right-color: rgba(0,0,0,0.1);
 #primary-menu.style-2 {
 	float: none;
 	max-width: none;
-	background:#fff;
-	border-top: 2px solid #66ccff;
-	border-bottom: 2px solid #66ccff;
+	background: #27002e;
+	border-top: 2px solid #909090;
+	border-bottom: 2px solid #909090;
 }
 
 #primary-menu.style-2 > div > ul { float: left; }
@@ -2316,7 +2316,7 @@ body.side-push-panel.side-panel-open:not(.device-xxs):not(.device-xs):not(.devic
 #page-title {
 	position: relative;
 	padding: 10px 0;
-	background-color: #F5F5F5;
+	background-color: transparent;
 	border-bottom: 1px solid #EEE;
 }
 
@@ -2328,7 +2328,7 @@ body.side-push-panel.side-panel-open:not(.device-xxs):not(.device-xs):not(.devic
 	line-height: 1;
 	font-weight: 600;
 	letter-spacing: 1px;
-	color: #66ccff;
+	color: white;
 	font-size: 24px;
 	text-transform: none;
 }
@@ -2455,7 +2455,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 #content {
 	position: relative;
 	overflow: hidden;
-	background-color: #FFF;
+	background-color: transparent;
 }
 
 #content p { line-height: 1.8; }
@@ -3918,7 +3918,7 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-overlay { display: no
 	position: relative;
 	margin: 0 0 50px;
 	padding: 0 0 50px;
-	border-bottom: 2px solid #F5F5F5;
+	
 }
 
 .entry-image { margin-bottom: 30px; }
@@ -9386,7 +9386,7 @@ button.toast-close-button {
   border-radius: 7px;
   color: #ffffff;
   font-size: 14px;
-  background: #66ccff;
+  background: #27002e;
   padding: 4px 10px 4px 10px;
   text-decoration: none;
 }
@@ -9442,7 +9442,7 @@ button.toast-close-button {
 
 #copyrights2 {
 	padding: 5px 0;
-	background-color: #66ccff;
+	background-color: #27002e;
 	font-size: 14px;
 	line-height: 1.8;
 	color: #fff;

@@ -344,6 +344,10 @@ window.onclick = function(event) {
     });
 }
 
+//Obtener año para el copyright footer
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById("copyright-year").textContent = new Date().getFullYear();
+});
 
 /**
  *
