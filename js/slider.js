@@ -142,3 +142,20 @@ sliderModal.addEventListener('click', function(event) {
         sliderModal.style.display = 'none';
     }
 });
+
+// Navegación con teclado
+document.addEventListener('keydown', function(event) {
+    if (sliderModal.style.display === 'flex') { // Solo si el modal está abierto
+        switch(event.key) {
+            case 'ArrowLeft':
+                changeImage(-1); // Ir a la imagen anterior
+                break;
+            case 'ArrowRight':
+                changeImage(1);  // Ir a la imagen siguiente
+                break;
+            case 'Escape':
+                sliderModal.style.display = 'none'; // Cerrar con ESC
+                break;
+        }
+    }
+});
