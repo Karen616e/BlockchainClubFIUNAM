@@ -154,6 +154,7 @@ document.addEventListener('keydown', function(event) {
                 changeImage(1);  // Ir a la imagen siguiente
                 break;
             case 'Escape':
+                event.preventDefault();
                 sliderModal.style.display = 'none'; // Cerrar con ESC
                 break;
         }
