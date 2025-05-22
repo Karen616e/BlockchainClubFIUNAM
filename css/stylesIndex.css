@@ -154,7 +154,32 @@ body{
     border-radius: 5px;
 }
 
+/*Estilizar la página de Contacto*/
+.contacto-rapido {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+}
 
+.contacto-item {
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    flex-direction: row;
+    min-width: 250px; /* Para buena visualización en pantallas pequeñas */
+}
+
+.contacto-item i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.contacto-item span {
+    font-size: 16px;
+}
 /*Estilos para el carrousel*/
 
 .content-all{
