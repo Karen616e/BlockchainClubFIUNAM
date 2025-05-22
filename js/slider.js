@@ -3,6 +3,7 @@ let currentImageIndex = 0;
 let galleryImages = [];
 const sliderModal = document.getElementById('sliderModal');
 const sliderImage = document.getElementById('sliderImage');
+const paginationContainer = document.getElementById('pagination');
 const closeBtn = document.querySelector('.close-btn');
 
 // Función para abrir el slider con las imágenes correspondientes
@@ -17,12 +18,14 @@ document.querySelectorAll('.image-thumbnail').forEach((img, index) => {
         sliderModal.style.display = 'flex';
         currentImageIndex = 0;
         showImage(currentImageIndex);
+        generatePagination(galleryImages.length);
     });
 });
 
 // Función para mostrar una imagen en el slider
 function showImage(index) {
     sliderImage.src = galleryImages[index];
+    updatePagination(index);
 }
 
 // Función para cambiar de imagen en el slider
@@ -102,7 +105,58 @@ function getGalleryImages(galleryName) {
     return galleries[galleryName] || [];
 }
 
+function generatePagination(numImages) {
+    paginationContainer.innerHTML = ''; // Limpiar cualquier contenido previo
+    for (let i = 0; i < numImages; i++) {
+        const dot = document.createElement('span');
+        dot.classList.add('pagination-dot');
+        dot.addEventListener('click', () => {
+            currentImageIndex = i;
+            showImage(i);
+        });
+        paginationContainer.appendChild(dot);
+    }
+    updatePagination(currentImageIndex); // Asegúrate de que el primer punto esté seleccionado
+}
+
+// Función para actualizar el punto seleccionado
+function updatePagination(index) {
+    const dots = document.querySelectorAll('.pagination-dot');
+    dots.forEach((dot, i) => {
+        if (i === index) {
+            dot.classList.add('selected');
+        } else {
+            dot.classList.remove('selected');
+        }
+    });
+}
+
 // Cerrar el slider cuando se hace clic en la 'X'
 closeBtn.addEventListener('click', () => {
     sliderModal.style.display = 'none';
+});
+
+// Cerrar el slider si se hace clic fuera de la imagen (en el fondo del modal)
+sliderModal.addEventListener('click', function(event) {
+    if (event.target === sliderModal) {
+        sliderModal.style.display = 'none';
+    }
+});
+
+// Navegación con teclado
+document.addEventListener('keydown', function(event) {
+    if (sliderModal.style.display === 'flex') { // Solo si el modal está abierto
+        switch(event.key) {
+            case 'ArrowLeft':
+                changeImage(-1); // Ir a la imagen anterior
+                break;
+            case 'ArrowRight':
+                changeImage(1);  // Ir a la imagen siguiente
+                break;
+            case 'Escape':
+                event.preventDefault();
+                sliderModal.style.display = 'none'; // Cerrar con ESC
+                break;
+        }
+    }
 });
