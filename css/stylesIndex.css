@@ -1,139 +1,119 @@
+/* Estilo general para contenedores */
+body{
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #5b325e, #28365a, #ae5de4);
+    background-size: 300% 300%;
 
-/*estilo para la introduccion bienvenidos a CISCO*/
-#content .content-wrap .container-row{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	width: auto;
+    animation: gradientBG 10s ease infinite;
 }
 
-
-#content .content-wrap .container-row .container-text{
-	width: 70%;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
 }
 
-
-#content .content-wrap .container-row .container-image{
-	width: 30%;
+.content-wrap {
+    background: none;
 }
 
-#content .content-wrap .container-row p{
-	width: 80%;
-	font-size: 16px;
-	
+#content .content-wrap .container-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
 }
 
-
-
-
-/*estilo para encabezados*/
-
-#content .content-wrap h4{
-	width: 65%;
+#content .content-wrap .container-text, 
+#content .content-wrap .container-image {
+    width: 70%;
 }
 
-
-
-
-#content .content-wrap h2{
-	width: 65%;
+#content .content-wrap .container-image {
+    width: 30%;
 }
 
-/*estilo para nuestra mision*/
-#content .content-wrap .entry-content{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: auto;
+#content .content-wrap p, 
+#content .content-wrap .container-extra p {
+    color: #ffffff;
+    width: 70%;
+    font-size: 16px;
 }
 
-#content .content-wrap .entry-content .container-row{
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	margin-bottom: 20px;
-}
-
-#content .content-wrap .entry-content .container-row .container-text{
-	width: 80%;
-}
-
-#content .content-wrap .entry-content .container-row .container-image{
-	width: 10%;
-}
-
-#content .content-wrap .entry-content .container-row .container-image img{
-	padding: 5px;
-}
-
-#content .content-wrap .entry-content .container-row .container-text p{
-	width: 90%;
-}
-
-
-/*estilo para lo que puedes esperar*/
-
-#content .content-wrap .container-extra p{
-	width: 70%;
-	font-size: 16px ;
-}
-
-/*estilo para la lista */
-#content .content-wrap li{
+#content .content-wrap li {
     width: 65%;
     display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-@media (max-width:900px) {
-
-	#content .content-wrap .container-row {
-		width: 100%;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-	}
-
-	/*estilos para nuestra mision*/
-	#content .content-wrap .entry-content .container-row{
-
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-		margin-bottom: 20px;
-	}
-
-	#content .content-wrap .entry-content .container-row .container-image{
-		width: 30%;
-		margin-bottom: 20px;
-	}
-
-	#content .content-wrap .entry-content .container-row .container-text{
-		width: 80%;
-	}
-
-	
+#content .content-wrap h2, 
+#content .content-wrap h4 {
+    color: #ffffff;
+    width: 65%;
 }
 
+#content .content-wrap .entry-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#content .content-wrap .entry-content .container-row {
+    margin-bottom: 20px;
+}
+
+#content .content-wrap .entry-content .container-row .container-text {
+    width: 80%;
+}
+
+#content .content-wrap .entry-content .container-row .container-image {
+    width: 10%;
+}
+
+#content .content-wrap .entry-content .container-row .container-image img {
+    padding: 5px;
+}
+
+#content .content-wrap .entry-content .container-row .container-text p {
+    width: 90%;
+}
+
+/* Media queries */
+@media (max-width: 900px) {
+    #content .content-wrap .container-row {
+        flex-direction: column;
+    }
+
+    #content .content-wrap .entry-content .container-row {
+        flex-direction: column;
+    }
+
+    #content .content-wrap .entry-content .container-row .container-image {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+
+    #content .content-wrap .entry-content .container-row .container-text {
+        width: 80%;
+    }
+}
+
+/* Texto y márgenes */
 .textos-pag {
-	text-align: justify;
+    text-align: justify;
 }
 
-.entry-content{
-	margin-top: 30px !important;
+.entry-content {
+    margin-top: 30px !important;
 }
 
+/* Contenedor y estilo de imágenes */
 .image-container2 {
     text-align: center;
     margin: 20px 0;
@@ -142,12 +122,11 @@
 .image-box2 {
     display: inline-block;
     width: 100%;
-    max-width: 800px; /* Adjust the max-width as needed */
+    max-width: 800px;
 }
 
-/* Estilizar imágenes */
 .image-box2 img {
-    object-fit: cover; /* Mantiene la proporción recortando el exceso */
+    object-fit: cover;
     cursor: pointer;
     border: 2px solid #ccc;
     border-radius: 8px;
@@ -158,7 +137,6 @@
     transform: scale(1.1);
 }
 
-/* Estilizar el texto debajo de la imagen */
 .image-box2 p {
     margin-top: 5px;
     font-size: 16px;
@@ -166,10 +144,11 @@
     color: #333;
 }
 
+/* Imagen rectangular */
 .big-rectangular-image {
     width: 100%;
     height: auto;
-    max-width: 600px; /* Adjust the max-width as needed */
+    max-width: 600px;
     display: block;
     margin: 0 auto;
     border-radius: 5px;
@@ -201,6 +180,127 @@
 .contacto-item span {
     font-size: 16px;
 }
+/*Estilos para el carrousel*/
+
+.content-all{
+    width: 400px;
+    margin: auto;
+    perspective: 1300px;
+    position: relative;
+    margin-top: 40px;
+    height: 300px;
+}
+
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    animation: rotar 50s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+.content-carrousel figure{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+    
+}
+
+
+.content-carrousel figure:hover{
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel figure:nth-child(1) {
+    transform: rotateY(60deg) translateZ(375px); /* Aumenta el valor de translateZ */
+}
+.content-carrousel figure:nth-child(2) {
+    transform: rotateY(120deg) translateZ(375px);
+}
+.content-carrousel figure:nth-child(3) {
+    transform: rotateY(180deg) translateZ(375px);
+}
+.content-carrousel figure:nth-child(4) {
+    transform: rotateY(240deg) translateZ(375px);
+}
+.content-carrousel figure:nth-child(5) {
+    transform: rotateY(300deg) translateZ(375px);
+}
+.content-carrousel figure:nth-child(6) {
+    transform: rotateY(360deg) translateZ(375px);
+}
 
 
 
+
+.content-carrousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que las imágenes se ajusten al tamaño del contenedor sin deformarse */
+    transition: all 300ms;
+}
+
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+
+.content-carrousel img:active {
+    transform: scale(1.1);
+    transition: all 300ms;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotateY(0deg); /* Inicia la rotación */
+    }
+    to {
+        transform: rotateY(360deg); /* Completa la rotación */
+    }
+}
+
+.hover-container {
+    position: relative;
+    display: inline-block;
+    width: 300px; /* Ajusta el ancho del carrusel */
+    height: 200px; 
+}
+
+.hover-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hover-container figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0; /* Oculta el texto inicialmente */
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hover-container:hover img {
+    transform: scale(1.1); /* Efecto de zoom en la imagen */
+}
+
+.hover-container:hover figcaption {
+    opacity: 1; /* Muestra el texto al pasar el mouse */
+}
