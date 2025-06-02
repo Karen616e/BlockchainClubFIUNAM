@@ -304,3 +304,39 @@ body{
 .hover-container:hover figcaption {
     opacity: 1; /* Muestra el texto al pasar el mouse */
 }
+
+.faculty-name {
+    color: white;
+    position: relative;
+    top: 10%;
+    transform: translateY(80%);
+    vertical-align: middle;
+    max-width: 100%;
+    white-space: nowrap;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media (min-width: 991px) {
+    .faculty-name {
+        white-space: nowrap;
+    }
+
+    .faculty-name br {
+        display: none;
+    }
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+    .faculty-name {
+        transform: translateY(0%);
+        transform: translateX(-50%);
+        top: 10%;
+    }
+} 
+
+@media (max-width: 767px) {
+    .faculty-name {
+        display: none;
+    }
+}
