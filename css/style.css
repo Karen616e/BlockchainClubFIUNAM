@@ -7609,7 +7609,7 @@ body:not(.device-touch) .clients-grid li a {
 }
 
 .team-title a{
-	color:#333434;
+	color:black;
 	display: block;
 	margin-bottom: 0;
 	font-size: 17px;
